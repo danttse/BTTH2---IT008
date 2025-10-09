@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,12 +10,12 @@ namespace BTTH2
     {
         protected string diadiem;
         protected long giatien;
-        protected int dientich;
+        protected float dientich;
         public string getDiadiem
         { get { return diadiem; } }
         public long getGiatien
         { get { return giatien; } }
-        public long getDientich
+        public float getDientich
         { get { return dientich; } }
         public abstract void Nhap();
         public abstract void Xuat();
@@ -26,7 +26,7 @@ namespace BTTH2
             Console.Write("Gia tien: ");
             giatien = long.Parse(Console.ReadLine());
             Console.Write("Dien tich: ");
-            dientich = int.Parse(Console.ReadLine());
+            dientich = float.Parse(Console.ReadLine());
         }
         protected void Xuatthongtinchung()
         {
